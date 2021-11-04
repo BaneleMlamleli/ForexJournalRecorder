@@ -1,1 +1,1 @@
-This script reads an Excel file and populates the read data into a Database
+This script reads an Excel file then writes all of that data into a Database
