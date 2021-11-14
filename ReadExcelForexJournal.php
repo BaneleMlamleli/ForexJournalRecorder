@@ -7,7 +7,7 @@
     // checking if the specified path and/or file exist and the file is readable
     if(is_readable($filePath)){
         $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filePath);   // Loading the Excel file that contains the sheet that I will read
-        $sheet = $spreadsheet->getSheetByName("Journal (2)");  //getting the specific sheet I want to read
+        $sheet = $spreadsheet->getSheetByName("Journal");  //getting the specific sheet I want to read
         
         // Store data from the read sheet to the variable in the form of Array
         $data = array(1,$sheet->toArray(null,true,true,true));
